@@ -1,38 +1,77 @@
-.App {
+.app-header{
   text-align: center;
+  margin: 0;
+  padding: 20px;
+  color: white;
+  font-weight: 900;
+  background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero{
+  width: 100%;
+  max-width: 600px;
+  margin-top: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchForm{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.searchForm input,.searchForm button{
+  width: 250px;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.searchForm input{
+  border: 1px solid lightgrey;
+  outline: none;
+}
+
+.searchForm button{
+  border: none;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.gituser{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  margin-top: 20px;
+  height: 120px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.users{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.footer{
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: large;
+  font-weight: bolder;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.userLogo{
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
 }
